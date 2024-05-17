@@ -28,6 +28,10 @@ img {
 	margin-right: auto;
 }
 
+a > img: only-child {
+	display: block;
+}
+
 hr {
 	color:#008000;
 	background-color:#008000;
@@ -68,3 +72,50 @@ li a:hover {
   color:white;
 }
 
+table{
+	width:100%;
+}
+
+table, th, td {
+  border: 3px solid #008000;
+  border-collapse:collapse;
+}
+
+th, td {
+	padding:20px;
+}
+
+tr:nth-child(even) {
+  background-color: #b7e5b7;
+}
+
+tr:nth-child(odd) {
+  background-color: #eaffea;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+	margin-left:100px;
+	font-size:150%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+ 
